@@ -1,7 +1,28 @@
 {% macro displayNewsList(news_list) %}
 
     {% for news in news_list %}
-        <li>{{ news.author}}</li>
+        <li>{{ news.description}}</li>
+
+        <div class="col-md-3">
+		           
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    
+                        {{ news.name}}
+                    </a>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        {{ news.description |truncate(100)}}
+
+                    </p>
+                    
+                </div>
+                
+
+            </div>
+        </div>
+
     {% endfor %}
 
 {% endmacro %}
