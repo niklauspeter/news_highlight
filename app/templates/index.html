@@ -1,24 +1,55 @@
 {% extends 'base.html'%}
 {% import 'macros.html' as macro%}
 
+<!-- Styles block -->
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+
+<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+
+<!-- Content block -->
+
+
+<div class="container"></div>
 <!-- Content block -->
 {% block content %}
 
-<!-- Popular movie -->
-<h3> Top Hightlights</h3>
-<ul>
-    {{ macro.displayNewsList(sports_sources )}}
-</ul>
-<!-- Upcoming movie  -->
-<h3> Top hightlights </h3>
-<ul>
-    {{ macro.displayNewsList(sports_sources )}}
-</ul>
-<!-- Now showing movie -->
-<h3>Best highlights</h3>
-<ul>
-    {{ macro.displayNewsList(sports_sources )}}
-</ul>
+<!-- Upcoming Technology  -->
+<div id="technology">
+        <h2> Technology </h2>
+        <hr>
+            {{ macro.displayNewsList(technology_sources )}}
+        </div>
 
+<!-- Popular sports -->
+<div id="sports">
+        <h2> Sports</h2>
+        <hr>
+            {{ macro.displayNewsList(sports_sources )}}
+        </div>
+
+<!-- Now showing business -->
+<div id="business">
+        <h2>Business</h2>
+        <hr>
+            {{ macro.displayNewsList(sources )}}
+        </div>
+
+<!-- Now showing entertainment -->
+<div id="entertainment">
+        <h2>Entertainment</h2>
+        <hr>
+            {{ macro.displayNewsList(entertainment_sources )}}
+        </div>
+
+<!--  general -->
+<div id="general">
+        <h2>General</h2>
+        <hr>
+            {{ macro.displayNewsList(general_sources )}}
+        </div>
 
 {% endblock%}
+</div>
