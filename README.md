@@ -5,14 +5,14 @@ This project was generated with python version 3.6.
 ### By Niklauspeter
 
 ##  Description
-This is a python web appliction that displays consumes a news api and displays an array of news sources feeds from around the world. On clicking a link on the news source, the user is redirected to another webpage where they are able to view other articles with regards to the news source in question .
+This is a python web appliction that consumes a news api(newsapi.org) and uses it to display an array of news feeds sourced from around the world. On clicking a link on the news source, the user is redirected to another webpage where they are able to view news articles with regards to the news source in question .
 
 
 ## User Stories
 These include the features that the application allows.
 The user is able to:
-* see a variety of news items sources globally
-* click on a link that gives them access to the particular news article
+* See a variety of news items sourced globally
+* Click on a link that gives them access to the particular news article
 * See a relevant Image, description as well as the time the news article was created.
 
 
@@ -42,7 +42,6 @@ To develop the application , youll need to preinstall a few application. includi
 |:------------| :---------|:--------|
 |display news sources |on page loading |displays list of news source as per their categories|
 |Display news article |click link on news source|redirected to page listing articles from respective source|
-
 |Diplays entire article |click on the article |redirected to the sources actual site to read the article|
 
 
